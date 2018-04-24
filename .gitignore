@@ -1,0 +1,4 @@
+node_modules/
+serverless-output.yaml
+package-lock.json
+template-local.yaml
