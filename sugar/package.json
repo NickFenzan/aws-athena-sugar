@@ -9,6 +9,5 @@
   "author": "Nick Fenzan",
   "license": "ISC",
   "dependencies": {
-    "node-rest-client": "^3.1.0"
   }
 }

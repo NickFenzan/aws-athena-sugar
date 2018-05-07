@@ -270,10 +270,11 @@ function Connection(version, key, secret, practiceid) {
 	 * @param {object} [options.headers={}] - Additional request headers
 	 * @returns {event.EventEmitter}
 	 */
-	this.GET = function(path, options) {
-		var extra = optional(options, {})
-		var params = optional(extra.params, {})
-		var headers = optional(extra.headers, {})
+	this.GET = function(path, params) {
+		// var extra = optional(options, {})
+		// var headers = optional(extra.headers, {})
+		var params = optional(params, {})
+		var headers = {};
 
 		// In a GET request, params go in the URL
 		var query = querystring.stringify(params)
@@ -298,10 +299,11 @@ function Connection(version, key, secret, practiceid) {
 	 * @param {object} [options.headers={}] - Additional request headers
 	 * @returns {event.EventEmitter}
 	 */
-	this.POST = function(path, options) {
-		var extra = optional(options, {})
-		var params = optional(extra.params, {})
-		var headers = optional(extra.headers, {})
+	this.POST = function(path, params) {
+		// var extra = optional(options, {})
+		// var headers = optional(extra.headers, {})
+		var params = optional(params, {})
+		var headers = {};
 		var new_headers = merge({
 			'content-type': 'application/x-www-form-urlencoded',
 		}, headers)
@@ -322,10 +324,11 @@ function Connection(version, key, secret, practiceid) {
 	 * @param {object} [options.headers={}] - Additional request headers
 	 * @returns {event.EventEmitter}
 	 */
-	this.PUT = function(path, options) {
-		var extra = optional(options, {})
-		var params = optional(extra.params, {})
-		var headers = optional(extra.headers, {})
+	this.PUT = function(path, params) {
+		// var extra = optional(options, {})
+		// var headers = optional(extra.headers, {})
+		var params = optional(params, {})
+		var headers = {};
 		var new_headers = merge({
 			'content-type': 'application/x-www-form-urlencoded',
 		}, headers)
@@ -346,10 +349,11 @@ function Connection(version, key, secret, practiceid) {
 	 * @param {object} [options.headers={}] - Additional request headers
 	 * @returns {event.EventEmitter}
 	 */
-	this.DELETE = function(path, options) {
-		var extra = optional(options, {})
-		var params = optional(extra.params, {})
-		var headers = optional(extra.headers, {})
+	this.DELETE = function(path, params) {
+		// var extra = optional(options, {})
+		// var headers = optional(extra.headers, {})
+		var params = optional(params, {})
+		var headers = {};
 
 		var query = querystring.stringify(params)
 		var new_path = path

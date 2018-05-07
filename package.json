@@ -9,6 +9,7 @@
   "author": "Nick Fenzan",
   "license": "ISC",
   "dependencies": {
-    "athena": "file:athena"
+    "athena": "file:athena",
+    "sugar": "file:sugar"
   }
 }
